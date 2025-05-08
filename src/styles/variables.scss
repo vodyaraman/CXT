@@ -7,10 +7,11 @@
 // Цвета
 $color-bg: #eff1ea;
 $color-text: #1a1a1a;
-$color-accent: #000000;
+$color-accent: #080808;
 $color-accent-gradient: color.adjust($color-accent, $lightness: 5%);
-$color-accent-hover: color.adjust($color-accent, $lightness: 10%);
+$color-accent-hover: color.adjust($color-accent, $lightness: 15%);
 $color-accent-text: #fafafa;
+$color-accent-bg: color.adjust($color-accent, $lightness: 87%);
 $color-border: #202020;
 $color-muted: #AEAEAE;
 $color-error: #f13737;

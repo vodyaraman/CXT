@@ -1,5 +1,5 @@
-/// <reference types="astro/client" />
 import { ThreeElements } from '@react-three/fiber'
+import "./storage.types";
 
 declare global {
   namespace React {

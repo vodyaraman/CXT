@@ -1,0 +1,23 @@
+.content-box {
+    background-color: $color-accent-bg;
+    border-radius: $border-radius * 1.25;
+    box-shadow: $shadow-medium;
+    padding: $component-padding;
+    gap: 0.5rem;
+    width: fit-content;
+
+    &--flex-center {
+        @include flexbox(column)
+    }
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: start;
+    padding: 2rem;
+    width: 100%;
+  }
+  
