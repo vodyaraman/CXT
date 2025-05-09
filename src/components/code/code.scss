@@ -1,4 +1,6 @@
 pre.language-json {
     width: 100%;
     background-color: $color-accent;
+    max-width: 400px;
+    overflow-x: scroll;
 }

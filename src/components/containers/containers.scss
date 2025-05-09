@@ -19,5 +19,14 @@
     align-items: start;
     padding: 2rem;
     width: 100%;
-  }
-  
+}
+
+.golrizontal-scroll-box {
+    @include flexbox(row, flex-start, flex-start);
+    display: flex;
+    max-height: 500px;
+    gap: 1.5rem;
+    padding: 2rem;
+    overflow-x: auto;
+    width: 100%;
+}

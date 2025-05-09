@@ -1,16 +1,28 @@
-import { AuthStorageChecker } from "@/components/builds/test/AuthStorageChecker"
-import { ProductStorageChecker } from "@/components/builds/test/ProductStorageChecker"
-import { ProfileStorageChecker } from "@/components/builds/test/ProfileStorageChecker"
-import { GridBox } from "@/components/containers/GridBox"
+import {
+  AuthStorageChecker,
+  ProductStorageChecker,
+  ProfileStorageChecker,
+  ArticleStorageChecker,
+  CartStorageChecker,
+  ViewProfileStorageChecker,
+  FeedStorageChecker
+} from "@/components/builds/test/storage-scheckers.index";
+
+import { HorizontalScrollBox } from "@/components/containers/HorizontalScrollBox";
 
 export default function HomePage() {
   return (
     <main>
-      <GridBox>
+      <HorizontalScrollBox>
         <AuthStorageChecker />
         <ProfileStorageChecker />
         <ProductStorageChecker />
-      </GridBox>
+        <ArticleStorageChecker />
+        <CartStorageChecker />
+        <ViewProfileStorageChecker />
+        <FeedStorageChecker />
+      </HorizontalScrollBox>
     </main>
-  )
+  );
 }
+
